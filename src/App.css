@@ -1,38 +1,537 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none !important;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ========Root Start============ */
+:root {
+  --fs-3xsm: 12px;
+  --fs-2xsm: 14px;
+  --fs-xsm: 16px;
+  --fs-sm: 18px;
+  --fs-3xmd: 20px;
+  --fs-2xmd: 22px;
+  --fs-xmd: 24px;
+  --fs-md: 28px;
+  --fs-lg: 43px;
+  --fs-xlg: 40px;
+  --fs-2xlg: 48px;
+  --fs-xl: 50px;
+  --fs-2xl: 75px;
+  --text-ffffff: #ffffff;
+  --text-252B42: #252B42;
+  --text-222B32: #222B32;
+  --text-8093F6: #8093F6;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fs_3xsm {
+  font-size: var(--fs-3xsm);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.fs_2xsm {
+  font-size: var(--fs-2xsm);
+}
+
+.fs_xsm {
+  font-size: var(--fs-xsm);
+}
+
+.fs_sm {
+  font-size: var(--fs-sm);
+}
+
+.fs_3xmd {
+  font-size: var(--fs-3xmd);
+}
+
+.fs_2xmd {
+  font-size: var(--fs-2xmd);
+}
+
+.fs_xmd {
+  font-size: var(--fs-xmd);
+}
+
+.fs_md {
+  font-size: var(--fs-md);
+}
+
+.fs_lg {
+  font-size: var(--fs-lg);
+}
+
+.fs_xlg {
+  font-size: var(--fs-xlg);
+}
+
+.fs_2xlg {
+  font-size: var(--fs-2xlg);
+}
+
+.fs_xl {
+  font-size: var(--fs-xl);
+}
+
+.fs_2xl {
+  font-size: var(--fs-2xl);
+}
+
+.text_ffffff {
+  color: var(--text-ffffff);
+}
+
+.text_252B42 {
+  color: var(--text-252B42);
+  transition: all 500ms linear;
+
+}
+
+.text_222B32 {
+  color: var(--text-222B32);
+  transition: all 500ms linear;
+
+}
+
+.text_8093F6 {
+  color: var(--text-8093F6);
+}
+
+/* ==============Root End============== */
+/* =====================Comman Classes=============== */
+.bg_252B42 {
+  background-color: #252B42;
+}
+
+.ff_jost {
+  font-family: 'Jost';
+}
+
+.ff_open_sans {
+  font-family: 'Open Sans';
+}
+
+.ff_poppins {
+  font-family: 'Poppins';
+}
+
+div ::-webkit-scrollbar {
+  display: none;
+}
+
+.cursor_pointer {
+  cursor: pointer;
+}
+
+.scroll_btn {
+  position: fixed;
+  right: 2%;
+  bottom: 40px;
+  z-index: 1;
+  cursor: pointer;
+}
+
+/* ============Common Classes End================== */
+
+/* =============Hero Section=================== */
+.hero_bg {
+  background-image: url(/src/assets/images/png/header_bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 100% 100%;
+}
+
+.social_media_app {
+  transition: all 500ms linear;
+}
+
+.social_media_app:hover {
+  transform: translatey(-10px);
+}
+
+.join_btn {
+  border: 1px solid transparent;
+  padding: 16px 32px;
+  border-radius: 35px;
+  background-color: #2091F9;
+  transition: all 500ms linear;
+}
+
+.join_btn:hover {
+  color: #2091F9;
+  background-color: white;
+  border: 1px solid #2091F9;
+}
+
+.more_btn {
+  border: 1px solid transparent;
+  padding: 16px 62.5px;
+  border-radius: 35px;
+  background-color: #ffffff;
+  transition: all 500ms linear;
+}
+
+.more_btn:hover {
+  border: 1px solid #ffffff;
   color: white;
+  background-color: #252B42;
+  box-shadow: 0px 3px 5px 3px rgba(255, 255, 255, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+/* ===============Hero Section End================= */
+/* ===========invest coin=================== */
+.learn_more_btn {
+  border: 1px solid transparent;
+  padding: 16px 20px;
+  border-radius: 35px;
+  background-color: #2091F9;
+  transition: all 500ms linear;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.learn_more_btn:hover {
+  border: 1px solid #2091F9;
+  color: #2091F9;
+  background-color: white;
+}
+
+.write_btn {
+  border: 1px solid transparent;
+  padding: 19px 38px;
+  border-radius: 35px;
+  background: #2091F9;
+  transition: all 500ms linear;
+}
+
+.write_btn:hover {
+  border: 1px solid #2091F9;
+  background-color: white;
+  color: #2091F9;
+}
+
+.play_btn_abs {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.slick-center {
+  transform: scale(1.3);
+  transition: all 500ms linear;
+}
+
+.boy_transform {
+  transform: translateY(-30px);
+}
+
+.scale {
+  transition: all 500ms linear;
+}
+
+.scale:hover {
+  scale: 1.1;
+}
+
+.invest_cards {
+  border: 1px solid transparent;
+  border-radius: 35px;
+  padding: 20px 0px;
+  transition: all 500ms linear;
+}
+
+.invest_cards:hover {
+  border: 1px solid #1A74C7;
+  border-radius: 35px;
+  padding: 20px 0px;
+  box-shadow: 0px 0px 20px 0px rgba(26, 116, 199, 0.25);
+}
+
+/* =============invest coin End============ */
+/* =========Our Sites=========== */
+.bottom_line {
+  width: 679px;
+  height: 2px;
+  background-color: #252B42;
+  display: flex;
+  justify-content: center;
+}
+
+.slider_box {
+  width: 320px;
+  padding: 29px 25px 19px 12px;
+  border-radius: 12px;
+  background-color: #252B42;
+  box-shadow: 0px 0px 20px 0px rgba(26, 116, 199, 0.25);
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #252B42 !important;
+}
+
+.slick-dots {
+  bottom: -72px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 20px !important;
+  color: #1A74C7 !important;
+  opacity: 1 !important;
+}
+
+.filter_darkgray {
+  filter: grayscale(100%);
+  transition: all 300ms linear;
+}
+
+.filter_darkgray:hover {
+  filter: grayscale(0);
+}
+
+/* =========Our Sites End========= */
+/* ===========Investments================= */
+.investment_cards {
+  width: 335px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #DEDEDE;
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+  transition: all 500ms linear;
+}
+
+.investment_cards:hover .text_252B42 {
+  color: var(--text-ffffff);
+}
+
+.investment_cards:hover .text_222B32 {
+  color: var(--text-ffffff);
+}
+
+.investment_cards:hover {
+  background-color: #2091F9;
+  transform: scaleY(1.1);
+}
+
+.order_btn {
+  border-radius: 35px;
+  background-color: #2091F9;
+  padding: 18px 38px;
+  transition: all 500ms linear;
+}
+
+.investment_cards:hover .order_btn {
+  background-color: white;
+  color: #2091F9;
+}
+
+/* ===========Investments End============= */
+/* ==========Write to Us================= */
+input {
+  outline: none;
+  border: none;
+  width: 672px;
+  height: 111px;
+  border-radius: 35px;
+  border: 1px solid rgba(37, 43, 66, 0.33);
+  background: #FFF;
+  box-shadow: 0px 4px 25px 0px rgba(32, 145, 249, 0.10);
+  padding: 0px 10px 0px 41px;
+  font-family: 'Poppins';
+  font-size: var(--fs-xmd);
+  font-weight: 500;
+  color: rgba(37, 43, 66, 0.69);
+}
+
+textarea {
+  outline: none;
+  border: none;
+  width: 672px;
+  height: 279px;
+  border-radius: 35px;
+  border: 1px solid rgba(37, 43, 66, 0.33);
+  background: #FFF;
+  box-shadow: 0px 4px 25px 0px rgba(32, 145, 249, 0.10);
+  padding: 45px 10px 0px 41px;
+  font-size: var(--fs-2xmd);
+  font-weight: 400;
+  color: var(--text-252B42);
+  font-family: 'Poppins';
+}
+
+.send_btn {
+  border: 1px solid transparent;
+  padding: 21px 80px;
+  border-radius: 35px;
+  background: #2091F9;
+  transition: all 500ms linear;
+}
+
+.send_btn:hover {
+  border: 1px solid #2091F9;
+  background-color: white;
+  color: #2091F9;
+}
+
+/* ============Write To Us End=============== */
+/* ===========Footer=============== */
+.footer_links {
+  font-family: 'poppins';
+  font-weight: 400;
+  font-size: var(--fs-3xsm);
+  color: var(--text-ffffff);
+  opacity: 0.75;
+}
+
+.ex_page {
+  position: relative;
+}
+
+.ex_page::after {
+  position: absolute;
+  content: '';
+  width: 145px;
+  height: 1px;
+  background-color: white;
+  left: 1%;
+  bottom: -3%;
+}
+
+.Link {
+  position: relative;
+}
+
+.Link::after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  left: 0;
+  bottom: -5px;
+  opacity: 0.75;
+  transform: scaleX(0);
+  transition: all 500ms linear;
+}
+
+.Link:hover::after {
+  transform: scaleX(1);
+}
+
+/* ===========Footer End========== */
+/* =======Media Quries================= */
+@media (min-width:1200px) {
+  .boy_abs {
+    position: absolute;
+    top: -12%;
+    right: -12%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .slick-center {
+    transform: scale(1.2);
+    transition: all 500ms linear;
+  }
+}
+
+@media (max-width:992px) {
+  .width_md_100 {
+    width: 100%;
+  }
+
+  .nav_sm {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #252B42;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition: all 500ms linear;
+  }
+
+  .nav_show {
+    left: 0;
+  }
+
+  .overflow_hidden {
+    overflow: hidden;
+  }
+
+  .close_nav {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+  }
+
+  :root {
+    --fs-3xsm: 12px;
+    --fs-2xsm: 14px;
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-3xmd: 20px;
+    --fs-2xmd: 22px;
+    --fs-xmd: 24px;
+    --fs-md: 28px;
+    --fs-lg: 43px;
+    --fs-xlg: 40px;
+    --fs-2xlg: 48px;
+    --fs-xl: 50px;
+    --fs-2xl: 65px;
+  }
+
+}
+
+@media (max-width:768px) {
+  :root {
+    --fs-3xsm: 12px;
+    --fs-2xsm: 14px;
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-3xmd: 20px;
+    --fs-2xmd: 22px;
+    --fs-xmd: 24px;
+    --fs-md: 28px;
+    --fs-lg: 35px;
+    --fs-xlg: 40px;
+    --fs-2xlg: 42px;
+    --fs-xl: 45px;
+    --fs-2xl: 60px;
+  }
+
+  .hero_bg {
+    background-size: cover;
+  }
+}
+
+@media (max-width:576px) {
+  .width_100 {
+    width: 100%;
+  }
+
+  :root {
+    --fs-3xsm: 12px;
+    --fs-2xsm: 14px;
+    --fs-xsm: 16px;
+    --fs-sm: 18px;
+    --fs-3xmd: 20px;
+    --fs-2xmd: 22px;
+    --fs-xmd: 24px;
+    --fs-md: 26px;
+    --fs-lg: 30px;
+    --fs-xlg: 34px;
+    --fs-2xlg: 36px;
+    --fs-xl: 40px;
+    --fs-2xl: 42px;
   }
 }
